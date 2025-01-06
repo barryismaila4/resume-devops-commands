@@ -10,3 +10,19 @@ PSW 123
  mysql -u root -p
 PSW :123
 create database accounts;
+ mysql> create database accounts;
+ mysql> grant all privileges on accounts.* TO 'admin'@'localhost' identified by
+ 'admin123';
+ mysql> grant all privileges on accounts.* TO 'admin'@'%' identified by 'admin123';
+ mysql> FLUSH PRIVILEGES;
+ mysql> exit;
+DownloadSourcecode&InitializeDatabase.
+ # cd /tmp/
+ # git clone-b local https://github.com/hkhcoder/vprofile-project.git
+ # cd vprofile-project
+ # mysql-u root-padmin123 accounts < src/main/resources/db_backup.sql
+ # mysql-u root-padmin123 accounts
+ mysql> show tables;
+ mysql> show databases;
+
+ mysql> exit;
