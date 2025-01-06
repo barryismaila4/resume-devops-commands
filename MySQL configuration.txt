@@ -1,2 +1,12 @@
 MySQL configuration
 dnf update -y
+dnf install epel-release -y
+dnf install git mariadb-server -y
+systemctl start MariaDB
+systemctl enable MariaDB
+systemctl status MariaDB
+mysql_secure_installation
+PSW 123
+ mysql -u root -p
+PSW :123
+create database accounts;
