@@ -26,3 +26,5 @@ DownloadSourcecode&InitializeDatabase.
  mysql> show databases;
 
  mysql> exit;
+//commande password wifi cmd:
+netsh wlan show profiles Ooredoo1F309F key=clear
